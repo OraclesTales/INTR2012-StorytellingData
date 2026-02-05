@@ -1,34 +1,53 @@
-let list = [];
-function preload(){
-    list = loadJSON("data.json");
-}
-function setup() {
-    createCanvas(400, 800);
-}
-function draw() {
-    background("lavender");
-    fill(0);
-    textAlign("center");
-    textSize(25);  
-    text("Canada's Exports", 200, 40);
-    // fill(200);/
-    // rect(70, 20, 50, 14);
-    // if (mouseIsPressed === true) {
-    //     fill(170, 175, 200);
-    // } else {
-    //     fill("lightyellow");
-    // }
-    // circle(mouseX, mouseY, 25);
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('myChart');
+            container.innerHTML = '';
+            const canvas = document.createElement('canvas');
+            canvas.id = 'chartCanvas';
+            container.appendChild(canvas);
 
-    Object.values (list).map((item, index) => {
-        fill(item.color);
-        rect(50, index * 30 + 65, item.amount / 180 * 300, 10);
-        fill (0);
-        textSize(12);
-        textAlign("left");
-        text(item.name, 50, index * 30 + 60);
-        textAlign("right");
-        text(item.icon, 45, index * 30 + 60);
-       
-    });
-}
+            const ctx = canvas.getContext('2d');
+
+            const labels = data.map(item => item.movie);
+            const worldwide = data.map(item => item.worldwide);
+            const international = data.map(item => item.international);
+            const domestic = data.map(item => item.domestic);
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        { label: 'Worldwide', data: worldwide, backgroundColor: '#52b0eb' },
+                        { label: 'International', data: international, backgroundColor: 'gold' },
+                        { label: 'Domestic', data: domestic, backgroundColor: '#3d67ff' }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: value => {
+                                    if (value >= 1000000000) return '$' + (value / 1000000000).toFixed(1) + 'B';
+                                    if (value >= 1000000) return '$' + (value / 1000000).toFixed(0) + 'M';
+                                    return '$' + value;
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: { position: 'top' },
+                        tooltip: { callbacks: { label: ctx => '$' + Number(ctx.raw).toLocaleString() } }
+                    }
+                }
+            });
+        })
+        .catch(err => {
+            console.error('Failed to load data.json', err);
+        });
+});

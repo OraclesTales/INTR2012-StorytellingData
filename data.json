@@ -1,110 +1,167 @@
 [
-  {
-    "name": "Mineral fuels, oils, distillation products",
-    "icon": "🛢️",
-    "color": "navy",
-    "amount": 180.47
-  },
-  {
-    "name": "Vehicles other than railway, tramway",
-    "icon": "🚗",
-    "color": "lightgreen",
-    "amount": 50.28
-  },
-  {
-    "name": "Machinery, nuclear reactors, boilers",
-    "icon": "⚙️",
-    "color": "teal",
-    "amount": 37.72
-  },
-  {
-    "name": "Pearls, precious stones, metals, coins",
-    "icon": "💎",
-    "color": "navy",
-    "amount": 22.34
-  },
-  {
-    "name": "Commodities not specified according to kind",
-    "icon": "❓",
-    "color": "navy",
-    "amount": 21.62
-  },
-  {
-    "name": "Wood and articles of wood, wood charcoal",
-    "icon": "🪵",
-    "color": "navy",
-    "amount": 19.74
-  },
-  {
-    "name": "Plastics",
-    "icon": "🥤",
-    "color": "navy",
-    "amount": 17.24
-  },
-  {
-    "name": "Electrical, electronic equipment",
-    "icon": "⚡",
-    "color": "navy",
-    "amount": 14.73
-  },
-  {
-    "name": "Aluminum",
-    "icon": "🔗",
-    "color": "navy",
-    "amount": 14.13
-  },
-  {
-    "name": "Fertilizers",
-    "icon": "🌱",
-    "color": "navy",
-    "amount": 13.72
-  },
-  {
-    "name": "Ores slag and ash",
-    "icon": "⛏️",
-    "color": "navy",
-    "amount": 11.58
-  },
-  {
-    "name": "Iron and steel",
-    "icon": "🪨",
-    "color": "navy",
-    "amount": 11.19
-  },
-  {
-    "name": "Pharmaceutical products",
-    "icon": "💊",
-    "color": "navy",
-    "amount": 10.73
-  },
-  {
-    "name": "Cereals",
-    "icon": "🌽",
-    "color": "navy",
-    "amount": 10.16
-  },
-  {
-    "name": "Aircraft, spacecraft",
-    "icon": "✈️",
-    "color": "navy",
-    "amount": 10.15
-  },
-  {
-    "name": "Paper and paperboard, articles of pulp, paper and board",
-    "icon": "✉️",
-    "color": "navy",
-    "amount": 8.46
-  },
-  {
-    "name": "Optical, photo, technical, medical apparatus",
-    "icon": "📸",
-    "color": "navy",
-    "amount": 8.20
-  },
-  {
-    "name": "Oil seed, oleagic fruits, grain, seed, fruits",
-    "icon": "🍓",
-    "color": "navy",
-    "amount": 8.15
-  }
+ {
+   "rank": 1,
+   "movie": "Ne Zha 2",
+   "worldwide": 2001155094,
+   "worldwideDisplay": "$2,001,155,094",
+   "domestic": 23251218,
+   "domesticDisplay": "$23,251,218",
+   "international": 1977903876,
+   "internationalDisplay": "$1,977,903,876",
+   "domesticShare": "1.16%"
+ },
+ {
+   "rank": 2,
+   "movie": "Zootopia 2",
+   "worldwide": 1777123365,
+   "worldwideDisplay": "$1,777,123,365",
+   "domestic": 409397687,
+   "domesticDisplay": "$409,397,687",
+   "international": 1367725678,
+   "internationalDisplay": "$1,367,725,678",
+   "domesticShare": "23.04%"
+ },
+ {
+   "rank": 3,
+   "movie": "Avatar: Fire and Ash",
+   "worldwide": 1415174586,
+   "worldwideDisplay": "$1,415,174,586",
+   "domestic": 386666195,
+   "domesticDisplay": "$386,666,195",
+   "international": 1028508391,
+   "internationalDisplay": "$1,028,508,391",
+   "domesticShare": "27.32%"
+ },
+ {
+   "rank": 4,
+   "movie": "Lilo & Stitch",
+   "worldwide": 1038020096,
+   "worldwideDisplay": "$1,038,020,096",
+   "domestic": 423778855,
+   "domesticDisplay": "$423,778,855",
+   "international": 614241241,
+   "internationalDisplay": "$614,241,241",
+   "domesticShare": "40.83%"
+ },
+ {
+   "rank": 5,
+   "movie": "A Minecraft Movie",
+   "worldwide": 958236520,
+   "worldwideDisplay": "$958,236,520",
+   "domestic": 424087780,
+   "domesticDisplay": "$424,087,780",
+   "international": 534148740,
+   "internationalDisplay": "$534,148,740",
+   "domesticShare": "44.26%"
+ },
+ {
+   "rank": 6,
+   "movie": "Jurassic World Rebirth",
+   "worldwide": 869145138,
+   "worldwideDisplay": "$869,145,138",
+   "domestic": 339640400,
+   "domesticDisplay": "$339,640,400",
+   "international": 529504738,
+   "internationalDisplay": "$529,504,738",
+   "domesticShare": "39.08%"
+ },
+ {
+   "rank": 7,
+   "movie": "Demon Slayer The Movie: Infinity Castle",
+   "worldwide": 778939527,
+   "worldwideDisplay": "$778,939,527",
+   "domestic": 134519077,
+   "domesticDisplay": "$134,519,077",
+   "international": 644420450,
+   "internationalDisplay": "$644,420,450",
+   "domesticShare": "17.27%"
+ },
+ {
+   "rank": 8,
+   "movie": "How to Train Your Dragon",
+   "worldwide": 636250970,
+   "worldwideDisplay": "$636,250,970",
+   "domestic": 262958100,
+   "domesticDisplay": "$262,958,100",
+   "international": 373292870,
+   "internationalDisplay": "$373,292,870",
+   "domesticShare": "41.33%"
+ },
+ {
+   "rank": 9,
+   "movie": "F1: The Movie",
+   "worldwide": 631842436,
+   "worldwideDisplay": "$631,842,436",
+   "domestic": 189642436,
+   "domesticDisplay": "$189,642,436",
+   "international": 442200000,
+   "internationalDisplay": "$442,200,000",
+   "domesticShare": "30.01%"
+ },
+ {
+   "rank": 10,
+   "movie": "Superman",
+   "worldwide": 616823803,
+   "worldwideDisplay": "$616,823,803",
+   "domestic": 354223803,
+   "domesticDisplay": "$354,223,803",
+   "international": 262600000,
+   "internationalDisplay": "$262,600,000",
+   "domesticShare": "57.43%"
+ },
+ {
+   "rank": 11,
+   "movie": "Mission: Impossible—The Final Reckoning",
+   "worldwide": 591353074,
+   "worldwideDisplay": "$591,353,074",
+   "domestic": 197413515,
+   "domesticDisplay": "$197,413,515",
+   "international": 393939559,
+   "internationalDisplay": "$393,939,559",
+   "domesticShare": "33.38%"
+ },
+ {
+   "rank": 12,
+   "movie": "Wicked: For Good",
+   "worldwide": 526776204,
+   "worldwideDisplay": "$526,776,204",
+   "domestic": 342915090,
+   "domesticDisplay": "$342,915,090",
+   "international": 183861114,
+   "internationalDisplay": "$183,861,114",
+   "domesticShare": "65.10%"
+ },
+ {
+   "rank": 13,
+   "movie": "The Fantastic Four: First Steps",
+   "worldwide": 520431599,
+   "worldwideDisplay": "$520,431,599",
+   "domestic": 274286610,
+   "domesticDisplay": "$274,286,610",
+   "international": 246144989,
+   "internationalDisplay": "$246,144,989",
+   "domesticShare": "52.70%"
+ },
+ {
+   "rank": 14,
+   "movie": "The Conjuring: Last Rites",
+   "worldwide": 494656445,
+   "worldwideDisplay": "$494,656,445",
+   "domestic": 177756445,
+   "domesticDisplay": "$177,756,445",
+   "international": 316900000,
+   "internationalDisplay": "$316,900,000",
+   "domesticShare": "35.94%"
+ },
+ {
+   "rank": 15,
+   "movie": "Detective Chinatown 1900",
+   "worldwide": 454950143,
+   "worldwideDisplay": "$454,950,143",
+   "domestic": 0,
+   "domesticDisplay": "$0",
+   "international": 454950143,
+   "internationalDisplay": "$454,950,143",
+   "domesticShare": 0
+ }
 ]

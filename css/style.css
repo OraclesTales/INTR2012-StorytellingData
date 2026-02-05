@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(14, 18, 36);
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+h1{
+    color: rgb(255, 221, 68);
+    padding:10px;
+    text-align: center;
+}
+
+
+h4,h3{
+    padding:10px;
+}
+
+p{  
+    margin: auto;
+    font-size: 15px;
+    padding: 10px;
+    color:white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+}
+.line{
+    border: 5px solid rgb(255, 221, 68);
+    opacity: 1;
+}
+.col {
+    float: center;
+    width: 40%;
+    height: max-content;
+    padding: 5px;
+    margin: 5px;
+}
+
+.title{
+    background-color: rgb(21, 37, 128);
+    color: white;
+    padding: 20px;
+}
+
+.content {
+color:white;
+}
+
+canvas {
+    min-height: 300px;
+    max-height: 400px;
+    display: block;
+}
+
+#myChart {
+    max-height: 600px;
+}

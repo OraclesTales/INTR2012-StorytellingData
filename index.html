@@ -22,12 +22,333 @@
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
     <script src="script.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
 <body>
-   
+    <div class="title">
+        <h1>Movies I Watched In 2025, and Their Analytics</h1>
+    </div>
+    <div class="container">
+
+        <div class="content">
+            <div class="row padding-4">
+                <div class="col-6">
+                    <p>Last year, I went to see a handful of movies with my friends, most on Tuesday when the price
+                        dropped at Cineplex for their Big Deal Tuesdays. We saw the following movies
+                        last year: Mickey 17, A Minecraft Movie, Sinners, Weapons, Superman, Fantastic
+                        Four: First Steps, Chainsaw Man The Movie: Reze Arc, Zootopia 2, Five Nights at Freddy's, and
+                        The SpongeBob Movie: Search for Squarepants. I wanted to analyze a few of the movies, their
+                        ratings, and their box office performance.</p>
+                </div>
+                <div class="col-6">
+                    <p>I'll only be reviewing the analytics for the top 3 movies of my list:</p>
+                    <h4>1. Superman</h4>
+                    <h4>2. Mickey17</h4>
+                    <h4>3. Zootopia 2</h4>
+                </div>
+            </div>
+            <hr class="line mt-4 mt-4">
+
+            <!-- Superman -->
+            <div class="row">
+                <div class="col-6">
+                    <h3>Superman</h3>
+                    <p>I saw this movie in theatres three times. I think that says enough. I first saw it with my parents and my cousin who was visiting from Japan. Then, I went to see it with another friend who apprently didn't have anyone to watch it with. I finally watched it for a third time in theatres with my best friend Silvana (we also watched Weapons in the same day, right before Superman).</p>
+                </div>
+                <div class="col-6">
+                    <img src="css/images/silvana.jpg">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h4>Rotten Tomato Rating</h4>
+                    <p>Of 501 reviews from critics on Rotten Tomatoes, Superman received an 83% rating.</p>
+                    <canvas id="supermanTomato"></canvas>
+                </div>
+                <!--box office-->
+                <div class="col-6">
+                    <h4>Box Office Stats</h4>
+                    <p>Superman had a budget of $225,000,000 and made 2.7 times the production budget, grossing at
+                        $616,823,803. The movie ranked 10 out of all movies last year in the box office.</p>
+                    <canvas id="supermanBoxOffice"></canvas>
+                </div>
+
+            </div>
+            <!--section conclusion-->
+            <div class="row">
+                <p>I LOVED this movie and I'd watch it over and over again if I had the time. Every aspect of it was beautifully executed -- I could really go on about it. It sparked a lot of political discussion across its audience, completely unintentionally. But it only further proved to be one of, if not the best adaptations of Superman. James Gunn and David Corenswet had a perfect understanding of the Superman Character.</p>
+            </div>
+
+            <hr class="line mt-4 mt-4">
+
+            <!-- Mickey17-->
+            <div class="row">
+                <div class="col-6">
+                    <h3>Mickey17</h3>
+                    <p>I went to Mickey17 with a friend from work almost a month after its release. We were the only two
+                        people in the entire theatre. It was quite fun! The movie itself was definitely interesting, it
+                        kept me thinking and on the edge of my seat. I enjoyed the character development between Mickey
+                        17 and 18, and I wouldn't mind watching it again.</p>
+                </div>
+                <div class="col-6">
+                    <img src="css/images/mickey17.jpg">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h4>Rotten Tomato Rating</h4>
+                    <p>Of 361 reviews from critics on Rotten Tomatoes, Mickey17 received a 78% rating.</p>
+                    <canvas id="mickeyTomato"></canvas>
+                </div>
+                <div class="col-6">
+                    <h4>Box Office Stats</h4>
+                    <p>Mickey17 had a budget of $118,000,000 and made 1.1 times the production budget, grossing at
+                        $133,442,263. The movie ranked 43 out of all movies last year in the box office.</p>
+                    <canvas id="mickeyBoxOffice"></canvas>
+                </div>
+
+            </div>
+            <div class="row">
+                <p>For some reason, I thought this movie would've been more popular or would have done better. I saw
+                    tons and tons of promotions about it, but to find that it didn't even rank in the top 30 movies of
+                    the year was unexpected.</p>
+            </div>
+
+            <hr class="line mt-4 mt-4">
+
+            <!-- Zootopia 2-->
+            <div class="row">
+                <div class="col-6">
+                    <h3>Zootopia 2</h3>
+                    <p>Within the same day, I went to see Five Nights at Freddy's 2 and Zootopia 2 with my friends Silvana and Sam. I went into Zootopia 2 with little to no expectations, I didn't know much about it, but felt a little on edge with ANOTHER Disney sequel. However, I found that I loved this movie too. It was heartwarming, and actually almost pulled some tears from me. They did a wonderful job tackling some issues that are relevant to today's society.</p>
+                </div>
+                <div class="col-6">
+                    <img src="css/images/zootopia2.jpg">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h4>Rotten Tomato Rating</h4>
+                    <p>Of 221 reviews from critics on Rotten Tomatoes, Zootopia 2 received a 91% rating.</p>
+                    <canvas id="zootopia2Tomato"></canvas>
+                </div>
+                <div class="col-6">
+                    <h4>Box Office Stats</h4>
+                    <p>Zootopia 2 had a budget of $150,000,000 and made 11.9 times the production budget, grossing at
+                        $1,777,625,108. The movie ranked 2nd out of all movies last year in the box office.</p>
+                    <canvas id="zootopia2BoxOffice"></canvas>
+                </div>
+
+            </div>
+            <div class="row">
+                <p>Before watching the movie, I heard a lot of good things about it, so I'm not surprised it did so well. However, I am surprised it ranked 2nd out of every movie in 2025 last year, when it only came out about a month before the year ended. I think party of why it did so well is because the audience for this movie has such a wide age range, but it's not to discredit its success. I think it was a great movie.</p>
+            </div>
+
+            <!--top 15 movies 2025-->
+            <hr class="line mt-4 mt-4">
+
+            <h3>Conclusion</h3>
+            <p>Overall, I think 2025 was a great year for movies. It had a wide variety of genres and styles, and many of the top movies were critically acclaimed and financially successful.Watching movies in theatres actually wasn't really something I did often until last year, and because of all the movies I watched last year, it's become a hobby for me and my friends. If we see a movie that's interesting, we'll try to find time to watch it (specifically on Tuesdays!) Next on my list is Iron Lung... by Markiplier!</p>
+
+            <hr class="line mt-4 mt-4">
+
+            <div class="row">
+                <h3 class="text-center">Top 15 Movies of 2025</h3>
+            <div id="myChart"></div>
+            <p>All box office data is displayed in USD. "Domestic" sales refer to sales within the United States, Canada, Puerto Rico and Guam.</p>
+        </div>
+        <!--mickey17 tomato chart-->
+        <script>
+            const ctx = document.getElementById('mickeyTomato');
+
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Fresh', 'Rotten'],
+                    datasets: [{
+                        label: 'Critic Rating',
+                        data: [280, 81],
+                        backgroundColor: [
+                            '#eb4123', //red (fresh)
+                            '#8deb52' //green (rotten)
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    layout: {
+                        padding: {
+                            top: 20
+                        }
+                    }
+                }
+            });
+        </script>
+
+        <!--mickey17 box office chart-->
+        <script>
+            const ctx2 = document.getElementById('mickeyBoxOffice');
+
+            new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['Worldwide', 'International', 'Domestic'],
+                    datasets: [{
+                        label: 'Money Made in USD',
+                        data: [133442263, 46142263, 87300000],
+                        backgroundColor: [
+                            '#52b0eb',
+                            'gold',
+                            '#3d67ff'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    layout: {
+                        padding: {
+                            top: 20
+                        }
+                    }
+                }
+            });
+        </script>
+
+        <!--superman tomato chart-->
+        <script>
+            const ctx3 = document.getElementById('supermanTomato');
+
+            new Chart(ctx3, {
+                type: 'pie',
+                data: {
+                    labels: ['Fresh', 'Rotten'],
+                    datasets: [{
+                        label: 'Critic Rating',
+                        data: [418, 84],
+                        backgroundColor: [
+                            '#eb4123', //red (fresh)
+                            '#8deb52' //green (rotten)
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    layout: {
+                        padding: {
+                            top: 20
+                        }
+                    }
+                }
+            });
+        </script>
+
+        <!--superman box office chart-->
+        <script>
+            const ctx4 = document.getElementById('supermanBoxOffice');
+
+            new Chart(ctx4, {
+                type: 'bar',
+                data: {
+                    labels: ['Worldwide', 'International', 'Domestic'],
+                    datasets: [{
+                        label: 'Money Made in USD',
+                        data: [616823803, 262600000, 354223803],
+                        backgroundColor: [
+                            '#52b0eb',
+                            'gold',
+                            '#3d67ff'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    layout: {
+                        padding: {
+                            top: 20
+                        }
+                    }
+                }
+            });
+        </script>
+
+         <!--zootopia2 tomato chart-->
+        <script>
+            const ctx5 = document.getElementById('zootopia2Tomato');
+
+            new Chart(ctx5, {
+                type: 'pie',
+                data: {
+                    labels: ['Fresh', 'Rotten'],
+                    datasets: [{
+                        label: 'Critic Rating',
+                        data: [418, 84],
+                        backgroundColor: [
+                            '#eb4123', //red (fresh)
+                            '#8deb52' //green (rotten)
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    layout: {
+                        padding: {
+                            top: 20
+                        }
+                    }
+                }
+            });
+        </script>
+
+        <!--zootopia2 box office chart-->
+        <script>
+            const ctx6 = document.getElementById('zootopia2BoxOffice');
+
+            new Chart(ctx6, {
+                type: 'bar',
+                data: {
+                    labels: ['Worldwide', 'International', 'Domestic'],
+                    datasets: [{
+                        label: 'Money Made in USD',
+                        data: [1777625108, 1367725678, 409899430],
+                        backgroundColor: [
+                            '#52b0eb',
+                            'gold',
+                            '#3d67ff'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    layout: {
+                        padding: {
+                            top: 20
+                        }
+                    }
+                }
+            });
+        </script>
 
 </body>
 
